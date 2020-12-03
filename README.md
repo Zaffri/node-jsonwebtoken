@@ -1,4 +1,9 @@
-# jsonwebtoken
+# jsonwebtoken (no signature)
+
+#WARNING:
+DO NOT USE - this specific project was forked to allow JSON web token with no signature verification, meaning tokens can be modified and are no cryptographically signed. This is used as an example vulnerability in a CTF challenge.
+
+If you are looking for the official secure node-jsonwebtoken, please go to auth0/node-jsonwebtoken
 
 | **Build** | **Dependency** |
 |-----------|---------------|

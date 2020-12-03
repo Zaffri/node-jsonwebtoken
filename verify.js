@@ -98,9 +98,10 @@ module.exports = function (jwtString, secretOrPublicKey, options, callback) {
 
     var hasSignature = parts[2].trim() !== '';
 
-    if (!hasSignature && secretOrPublicKey){
-      return done(new JsonWebTokenError('jwt signature is required'));
-    }
+    // REMOVE SIGNATURE CHECK TO ALLOW NO ALGORITHM
+    // if (!hasSignature && secretOrPublicKey){
+    //   return done(new JsonWebTokenError('jwt signature is required'));
+    // }
 
     if (hasSignature && !secretOrPublicKey) {
       return done(new JsonWebTokenError('secret or public key must be provided'));

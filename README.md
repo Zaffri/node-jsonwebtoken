@@ -1,4 +1,4 @@
-# DO NOT USE jsonwebtoken (no signature)
+# DO NOT USE - jsonwebtoken (no signature)
 
 # WARNING
 DO NOT USE - this specific project was forked to allow JSON web token with no signature verification, meaning tokens can be modified and are no cryptographically signed. This is used as an example vulnerability in a CTF challenge.
